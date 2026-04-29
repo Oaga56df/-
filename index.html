@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大马同城交友</title>
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            /* 背景渐变色 */
+            background: linear-gradient(135deg, #6a49a9 0%, #c14e9e 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* 主卡片容器 */
+        .container {
+            background-color: white;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 30px;
+            padding: 40px 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* 标题部分 */
+        .header h1 {
+            color: #3b5998;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        /* 警告提示框 */
+        .warning-box {
+            background-color: #fff1f0;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+
+        .warning-box p {
+            color: #ff4d4f;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        /* 特点列表 */
+        .features {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            font-size: 16px;
+            color: #444;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 安全私密框 */
+        .privacy-box {
+            background-color: #f8fbff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .privacy-title {
+            color: #3b5998;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .privacy-desc {
+            color: #777;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* 评价引用 */
+        .testimonial {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        /* 按钮上方提示 */
+        .cta-hint {
+            color: #ff4d4f;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* 核心按钮 */
+        .btn-main {
+            display: block;
+            width: 100%;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+            transition: transform 0.2s;
+        }
+
+        .btn-main:active {
+            transform: scale(0.98);
+        }
+
+        /* 底部信息 */
+        .footer-info {
+            margin-top: 15px;
+            color: #ff4d4f;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .footer-note {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* 简单的 Emoji 替代图标方案 */
+        .emoji-icon { font-style: normal; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>大马同城交友</h1>
+        <h2>在马来西亚，找同城真人聊天</h2>
+        <p class="subtitle">本地华人 | 实时在线 | 免费畅聊</p>
+    </div>
+
+    <div class="warning-box">
+        <p>⚠️ 点击下方按钮 = 直接打开 WS 聊天</p>
+        <p>无需下载，无需注册，立即开始聊天</p>
+    </div>
+
+    <div class="features">
+        <div class="feature-item">
+            <span class="icon">🌍</span> 全马同城，西马东马都能匹配
+        </div>
+        <div class="feature-item">
+            <span class="icon">✅</span> 严格真人审核，拒绝虚假账号
+        </div>
+        <div class="feature-item">
+            <span class="icon">💬</span> 点击直接聊天，不绕弯子
+        </div>
+        <div class="feature-item">
+            <span class="icon">💰</span> 完全免费，无任何收费
+        </div>
+    </div>
+
+    <div class="privacy-box">
+        <div class="privacy-title">🔒 安全私密</div>
+        <div class="privacy-desc">
+            100% 隐私保护，聊天内容不外泄<br>
+            放心聊天，无广告无套路
+        </div>
+    </div>
+
+    <div class="testimonial">
+        “不用注册，点一下就直接进 WS 聊天，太方便了！”<br>
+        —— 吉隆坡用户
+    </div>
+
+    <div class="cta-hint">
+        👇 点击红色按钮，立即对接同城真人 👇
+    </div>
+
+    <a href="#" class="btn-main">立即进入 WS · 马上开始聊天</a>
+
+    <div class="footer-info">
+        ✅ 1 秒打开 · 免费聊天 · 真人在线
+    </div>
+
+    <div class="footer-note">
+        专为马来西亚华人打造 | 100% 本地真实用户 | 即时私密聊天
+    </div>
+</div>
+
+</body>
+</html>
